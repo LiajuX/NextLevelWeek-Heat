@@ -1,0 +1,154 @@
+.sendMessageFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+
+  position: relative;
+
+  padding: 24px;
+
+  background: #1B1B1F;
+
+  text-align: center;
+}
+
+.signOutButton {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+
+  border: 0;
+
+  color: #C4C4CC;
+  background: transparent;
+
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.sealImage {
+  position: absolute;
+  right: 40px;
+  top: -44px;
+}
+
+.userInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 24px;
+
+  .userImage {
+    padding: 3px;
+    border-radius: 50%;
+
+    background: linear-gradient(104.3deg, #FF008E 0.48%, #FFCD1E 100%);
+
+    line-height: 0;
+
+    img {
+      width: 94px;
+      height: 94px;
+
+      border: 6px solid #121214;
+      border-radius: 50%;
+    }
+  }
+
+  .userName {
+    margin-top: 16px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .userGithub {
+    display: flex;
+    align-items: center;
+
+    margin-top: 8px;
+
+    color: #C4C4CC;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+.sendMessageForm {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+
+  margin-top: 48px;
+
+  background: #202024;
+
+  label {
+    padding: 18px 24px;
+
+    background: #29292E;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  textarea {
+    height: 160px;
+
+    padding: 24px;
+    border: 0;
+
+    color: #E1E1E6;
+    background: transparent;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    resize: none;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #8D8D99;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+
+    height: 40px;
+
+    margin: 32px;
+    padding: 0 32px;
+    border: 0;
+
+    color: #FFFFFF;
+    background: #FF008E;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
