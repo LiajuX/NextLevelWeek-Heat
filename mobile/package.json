@@ -11,6 +11,7 @@
     "@expo-google-fonts/roboto": "^0.2.0",
     "@react-native-async-storage/async-storage": "~1.15.0",
     "axios": "^0.23.0",
+    "babel-plugin-inline-dotenv": "^1.6.0",
     "expo": "~43.0.0",
     "expo-app-loading": "~1.2.1",
     "expo-auth-session": "~3.4.2",

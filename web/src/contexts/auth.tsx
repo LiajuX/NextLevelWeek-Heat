@@ -29,12 +29,14 @@ type AuthResponse = {
   }
 }
 
+const { GITHUB_CLIENT_ID } = import.meta.env
+
 export const AuthContext = createContext({} as AuthContextData);
 
 export function AuthProvider({ children }: AuthProviderProps) {
   const [user, setUser] = useState<User | null>(null); 
 
-  const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=86fb6394cfb4fadd66ae`
+  const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=${GITHUB_CLIENT_ID}`
 
   async function signIn(githubCode: string) {
     const response = await api.post<AuthResponse>('authenticate', {

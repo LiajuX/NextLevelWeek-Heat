@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import { VscGithubInverted, VscSignOut } from 'react-icons/vsc';
 
 import { useAuth } from '../../hooks/useAuth';
@@ -24,7 +25,23 @@ export function SendMessageForm() {
     await api.post('messages', { message });
 
     setMessage('');
+
+    showToast();
   }
+
+  function showToast() {
+      toast('Mensagem enviada com sucesso!',
+      {
+        duration: 3000,
+        style: {
+          padding: '16px 28px',
+          borderRadius: 0,
+          color: '#FFFFFF',
+          background: '#1B873F',
+        },
+      }
+    );
+  } 
 
   return (
     <div className={styles.sendMessageFormWrapper}>
@@ -60,10 +77,16 @@ export function SendMessageForm() {
           value={message}
           placeholder="Qual sua expectativa para o evento"
           onChange={event => setMessage(event.target.value)}
+          maxLength={140}
         />
 
         <button type="submit">Enviar mensagem</button>
       </form>
+
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+      />
     </div>
   );
 }

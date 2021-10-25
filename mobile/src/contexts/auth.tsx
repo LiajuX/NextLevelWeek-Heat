@@ -4,7 +4,7 @@ import * as AuthSession from 'expo-auth-session';
 
 import { api } from '../services/api';
 
-const CLIENT_ID = 'add4d36032009b37c0ee';
+const { GITHUB_CLIENT_ID } = process.env;
 const SCOPE = 'read:user';
 
 type User = {
@@ -66,7 +66,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
   async function signIn() {
     try {
-      const authUrl = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=${SCOPE}`;
+      const authUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&scope=${SCOPE}`;
 
       const authSessionResponse = await AuthSession
       .startAsync({ authUrl }) as AuthorizationResponse;  
