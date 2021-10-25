@@ -79,6 +79,9 @@ A REST API built with Node.js and TypeScript.
 - *[Express](https://expressjs.com/pt-br/)*
 - *[Prisma](https://www.prisma.io/)*
 
+Microservice to create a tag cloud with Elixir.
+- **[Elixir](https://elixir-lang.org/)**
+
 <br>
 
 ## 💻 Web
