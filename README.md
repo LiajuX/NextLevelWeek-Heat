@@ -52,11 +52,11 @@ This repository contains the **Impulse** path of the NLW.
 
 **🎨  Layout made in [Figma](https://www.figma.com/) by [Tiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/)**<br>
 
-- [X] **12/10/2020** - Accelerating your evolution (**Introduction**)
-- [X] **13/10/2020** - Looking at opportunities (**Back-End**)
-- [X] **14/10/2020** - The stack choice (**Front-End**)
-- [X] **15/10/2020** - Up to 2 years in 2 months (**Mobile**)
-- [X] **16/10/2020** - The extra mile (**Advanced Features**)
+- [X] **12/10/2021** - Accelerating your evolution (**Introduction**)
+- [X] **13/10/2021** - Looking at opportunities (**Back-End**)
+- [X] **14/10/2021** - The stack choice (**Front-End**)
+- [X] **15/10/2021** - Up to 2 years in 2 months (**Mobile**)
+- [X] **16/10/2021** - The extra mile (**Advanced Features**)
 
 <br> 
 
